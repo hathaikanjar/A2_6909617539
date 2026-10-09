@@ -1,108 +1,200 @@
 body {
-    
-    background-color: #f2f3f0;
-    color: hsl(53, 19%, 26%);
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5px;
-    width: 100%;
-    
-
-}
-
-.page {
-
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.header {
-
-    width: 100% ;
-
+    color: #222;
+    background-color: white;
+    line-height: 1.7;
 }
 
 
+/* Navbar */
 
-
-nav {
-
-    background-color: #5fa2a6;
-    font-family: serif;
-    padding: 10px;
-    text-align: center;
-    margin: 0px;
-
+.navbar {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
 }
 
-nav a {
-
-    color: #f2f3f0;
+.navbar-brand {
     font-weight: bold;
-    margin: 15px;
-    text-decoration-line: none;
-
+    letter-spacing: 2px;
 }
 
-#name {
-
-    font-family: "Gill Sans" ;
-    text-shadow: 1.2PX 1.2px black;
-    border-block-end: solid 5;
-    font-size: 50PX
-    
+.nav-link {
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 
-.introduce {
+/* Home */
 
-    color: rgb(250, 251, 251);
-    font-size: 22px;
-    background-color: #5fa2a6;
-    padding: 20px;
-    border: 4px ridge #F2E5B8;
-    line-height: 200%;
+.home-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.home-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.home-section h2 {
+    text-shadow: 7px 0px 21px rgba(0, 0, 0, 0.47);
+    margin-top: 10px;
+}
+
+.home-section p {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.profile {
+
+    margin-top: 50px;
+    width: 300px;
+    height: 350px;
 
 }
+
+
+/* Section */
+
+.section {
+    padding: 100px 0;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.section h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.skill-box h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+.skill-item {
+    border: 1px solid #625f5f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #625f5f;
+    box-shadow: -2px 11px 33px -5px rgba(0, 0, 0, 0.66);
+    border-radius: 30px;
+}
+
+.skill-item p {
+    margin: 4px;
+    padding: 3px;
+    color: aliceblue;
+}
+
+.activity-section {
+    background-color: white;
+}
+
+
+/* Small Title */
+
+.small-title {
+    text-shadow: 7px 0px 21px rgba(0, 0, 0, 0.47);
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgb(13, 0, 0);
+    font-weight: bold;
+}
+
+
+/* Heading */
 
 h2 {
-    
-    border-bottom: 2px solid #5fa2a6;
-    font-size: 28px;
-    font-family: serif;
-    color: rgb(18, 18, 18);
-
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-p {
-
-    font-size: 20px;
-    font-family: Georgia, serif;
-    color: rgb(58, 55, 55);
-    padding-left: 5px
-
+h5 {
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
+
+/* Button */
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
     
+}
 
-footer { 
 
-    background-color: #2f3131;
-    font-family: serif;
-    padding: 10px;
+/* Contact */
+
+.contact-section {
+    padding: 100px 0;
+    background-color: #222;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.contact-section .small-title {
+    color: #aaa;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+    color: #aaa;
     text-align: center;
-    margin: 0px ;
-
+    padding: 20px;
 }
 
 footer a {
-
-    color: #f2f3f0;
+    color: white;
     font-weight: bold;
     margin: 15px;
     text-decoration-line: none;
-
 }
 
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .nav-link {
+        margin-left: 5px;
+        font-size: 11px;
+    }
+
+    .home-section h1 {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+}
